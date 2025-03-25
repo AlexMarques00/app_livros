@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Sobre.dart';
-import 'Config.dart';
+import 'Profile.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Config(),
-    // home: Sobre(),
+    home: Profile(),
   ));
 }

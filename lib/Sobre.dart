@@ -61,10 +61,14 @@ class _SobreState extends State<Sobre> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'App Criado por Charles, Rafael, Alex e Lucas.\n'
-                'Alunos do curso de Engenharia da Computação da\n'
-                'Pontifícia Universidade Católica de Minas Gerais.\n'
-                'Todos os direitos reservados aos Criadores do App.',
+                'App Criado por Charles, Rafael, Alex e Lucas. '
+                'Alunos do curso de Engenharia da Computação da '
+                'Pontifícia Universidade Católica de Minas Gerais. '
+                'Todos os direitos reservados aos Criadores do App.\n'
+                'https://github.com/AlexMarques03\n'
+                'https://github.com/CharlesMeira\n'
+                'https://github.com/LucasBarros28\n'
+                'https://github.com/rafahcbarbosa\n',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16),
               ),
