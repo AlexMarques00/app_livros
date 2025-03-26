@@ -9,24 +9,22 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  bool _notificacao = false;
-  TextEditingController _textEditingController =
-      TextEditingController(); //instanciar o objeto para controlar o campo de texto
+  TextEditingController _textEditingController = TextEditingController(); //instanciar o objeto para controlar o campo de texto
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //configurações de retorno
+        automaticallyImplyLeading: false,
         title: Text("Seu Perfil"),
         actions: [
           IconButton(
             icon: Icon(Icons.settings),
             onPressed: () {
               Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Config()),
-                ); // Volta para a tela anterior
+                context,
+                MaterialPageRoute(builder: (context) => Config()),
+              );
             },
           ),
         ]
@@ -76,14 +74,14 @@ class _ProfileState extends State<Profile> {
                           Column(
                             children: [
                               Text("0", style: TextStyle(fontWeight: FontWeight.bold)),
-                              Text("Followers"),
+                              Text("Leitores"),
                             ],
                           ),
                           SizedBox(width: 16),
                           Column(
                             children: [
                               Text("0", style: TextStyle(fontWeight: FontWeight.bold)),
-                              Text("Following"),
+                              Text("Seguindo"),
                             ],
                           ),
                         ],

@@ -26,8 +26,19 @@ class _SobreState extends State<Sobre> {
           ListView(
             children: [
               InkWell(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (context){
+                      return AlertDialog(
+                        title: Text("Versão"),
+                      content: Text("1.0.0"),
+                      );
+                    }
+                  );
+                },
                 child: ListTile(
-                  title: const Text('Versão do App: 1.0.0'),
+                  title: const Text('Versão'),
                 ),
               ),
               InkWell(

@@ -1,3 +1,4 @@
+import 'package:app_livros2/SignIn.dart';
 import 'package:flutter/material.dart';
 import 'Sobre.dart';
 
@@ -15,7 +16,6 @@ class _ConfigState extends State<Config> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //configurações de retorno
         title: Text("Configurações"),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
@@ -100,8 +100,11 @@ class _ConfigState extends State<Config> {
             ),
             // Botão de logout
             InkWell(
-              onTap: () {
-                print("Logout");
+              onTap:  () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SignIn()),
+              );
               },
               child: ListTile(
                 leading: const Icon(
